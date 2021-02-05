@@ -1,0 +1,5 @@
+flask
+pytest
+setuptools
+opencv-python
+flake8
