@@ -1,7 +1,8 @@
 import cv2
+import os
 from typing import Generator
 
-WEBCAM_INDEX = 0
+WEBCAM_INDEX = os.environ.get("WEBCAM_INDEX", None) or 0
 CAMERA = cv2.VideoCapture(WEBCAM_INDEX)
 
 
